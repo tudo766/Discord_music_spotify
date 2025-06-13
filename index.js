@@ -70,7 +70,7 @@ client.commands.set("play", {
 
     player.on(AudioPlayerStatus.Idle, () => connection.destroy());
 
-    message.reply(`▶️ Đang phát: **${track.name}** – *${track.artists.map(a => a.name).join(", ")}*`);
+    message.reply(`Đang phát: **${track.name}** – *${track.artists.map(a => a.name).join(", ")}*`);
   }
 });
 
@@ -82,7 +82,7 @@ client.commands.set("pause", {
     if (!conn) return message.reply("Bot chưa vào voice.");
     const player = conn.state.subscription.player;
     player.pause();
-    message.reply("⏸ Đã tạm dừng.");
+    message.reply("Đã tạm dừng.");
   }
 });
 
@@ -118,7 +118,7 @@ client.commands.set("leave", {
     const conn = getVoiceConnection(message.guild.id);
     if (!conn) return message.reply("Bot chưa trong kênh.");
     conn.destroy();
-    message.reply("👋 Đã rời kênh voice.");
+    message.reply("Đã rời kênh voice.");
   }
 });
 
