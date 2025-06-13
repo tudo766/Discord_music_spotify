@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Optional: base files (nếu không dùng đến)
+1749845379820-base.js
+1749845379827-base.js
