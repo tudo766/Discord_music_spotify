@@ -1,14 +1,13 @@
-
-app = "discord-music-spotify"  # 👉 Tên app trên Fly.io
-
-[env]
-  PORT = "8080"
+app = "discord-music-spotify"
 
 [build]
-  builder = "heroku/buildpacks:20"
+  image = "node:18"
 
-[experimental]
-  auto_rollback = true
+[env]
+  NODE_ENV = "production"
 
 [processes]
   app = "node index.js"
+
+[experimental]
+  auto_rollback = true
