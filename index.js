@@ -13,6 +13,9 @@ require("dotenv").config();
 
 console.log(generateDependencyReport());
 
+require("http").createServer((req, res) => res.end("Bot is alive")).listen(process.env.PORT || 3000);
+
+
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
