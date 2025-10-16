@@ -7,6 +7,7 @@ const {
   getVoiceConnection,
   generateDependencyReport
 } = require("@discordjs/voice");
+
 const fs = require("fs");
 const path = require("path");
 require("dotenv").config();
